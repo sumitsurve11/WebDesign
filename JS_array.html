@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Array methods</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>JavaScript Array Methods</h1>
+    <script type="text/javascript">
+		var students = new Array("Python", "Web_Design", "Core_Java", "Django", "Rest API");
+        Array.prototype.display=function(){
+			for (i=0;i<this.length;i++){
+				document.write(this[i] + "<br />");
+			}
+		}	
+		document.write("<b>Students array: </b><br>");
+        // Display array.
+		students.display();
+		document.write("<br><b> The number of items in students array are:</b> " + students.length + "<br>");
+		document.write("<br><b> The SORTED students array: </b><br>");
+        // Sorting items in an array. 
+		students.sort();
+        // Display array after sorting.
+		students.display();
+		document.write("<br><b>The REVERSED students array</b><br>");
+        // Reversing items in an array.
+		students.reverse();
+        // Display array after reversing.
+		students.display();
+		document.write("<br><b> The students array after REMOVING the LAST item: </b><br>");
+        // Extracting an item from the end of array.
+		students.pop();
+        // Display array after removing last item.
+		students.display();
+		document.write("<br><b> The students array after using PUSH method: </b><br>");
+        // Adding items at the end of array.
+        students.push("Angular_10");
+        // Display array after adding an item at the end.
+		students.display();		
+	</script>
+    
+</body>
+
+</html>

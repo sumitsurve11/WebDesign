@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS</title>
+    
+</head>
+<body>
+    <h1>This Greeting is Dynamic and will change with Time</h1>
+    <br><br>
+    <h2 id="greet" style="color: brown;"></h2>
+    <script>
+        var date=new Date();
+        var hour=date.getHours();
+        var tag=document.getElementById("greet");
+        if(hour >=6 && hour<12){
+            tag.innerHTML="A very Good Morning";
+        }
+        else if(hour >=12 && hour <18){
+            tag.innerHTML="Good Afternoon";
+        }
+        else if(hour >=18 && hour <20){
+            tag.innerHTML="Good Evening";
+        }
+        else{
+            tag.innerHTML="Good night";
+        }
+
+    </script>
+</body>
+</html>

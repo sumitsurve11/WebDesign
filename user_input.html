@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS</title>
+    <script>
+        function checkEvenOdd(){
+            var n = document.getElementById("number").value;
+            if(n%2 ==0){
+                document.getElementById("result").innerHTML="Even Number";
+            }else{
+                document.getElementById("result").innerHTML="Odd Number";
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <center>
+    <h1>Even Odd Calculator</h1>
+    <br><br><br>
+
+    Enter a Number:
+    <input type="text" placeholder="Enter number only" id="number">
+    <br><br><br>
+    <input type="button" value="Check Even/Odd" onclick="checkEvenOdd()">
+    <br><br><br>
+    <h2 id="result">Answer here</h2>
+    </center>
+</body>
+</html>

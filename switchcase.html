@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS</title>
+
+</head>
+<body>
+    <h4>This is switch example to display week message</h4>
+
+    <h1 id="msg" style="color: cyan;"></h1>
+    <script>
+        var date=new Date();
+        var day=date.getDay();
+        var message=document.getElementById("msg");
+        switch(day){
+            case 0:
+                message.innerHTML="Happy Holiday!!!Its Sunday";
+                break;
+            case 1:
+                message.innerHTML="Its monday";
+                break;
+            case 2:
+                message.innerHTML="Its Tuesday";
+                break;
+            case 3:
+                message.innerHTML="Its Wednesday";
+                break;
+            case 4:
+                message.innerHTML="Its Thursday";
+                break;
+            case 5:
+                message.innerHTML="Its Friday";
+                break;
+            case 6:
+                message.innerHTML="Its Saturday";
+                break;
+            default:
+                message.innerHTML="Invalid day";
+                break;            
+        }
+    </script>
+</body>
+</html>
